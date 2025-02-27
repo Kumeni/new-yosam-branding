@@ -1,0 +1,7 @@
+.banners:nth-of-type(even){
+
+}
+
+.banners-image-right .banner > .banner-image-container{
+    grid-area: 1/2/span 1/ span 1;
+}
