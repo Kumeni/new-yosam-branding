@@ -14,6 +14,15 @@
     /* min-height:100vh; */
     /* background-color: yellow; */
 }
+
+.banners-image-right .banner{
+    justify-content: center;
+}
+.banners-image-right .banner > .banner-image-container{
+    grid-area: 1/2/span 1/ span 1;
+    justify-self: left;
+}
+
 @media (max-width: 1024px){
     .banner{
         grid-template-columns: 45vw 45vw;
@@ -30,7 +39,10 @@
     .banner{
         padding: 1rem;
     }
-
+    .banners-image-right .banner > .banner-image-container{
+        grid-area: 1/1/span 1/ span 1;
+        justify-self: unset;
+    }
     .banner:nth-of-type(even) .banner-image-container{
         grid-area: 1/1/span 1/ span 1;
     }
